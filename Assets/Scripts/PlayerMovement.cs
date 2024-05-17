@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private MovementType _movementType;
 
-    [SerializeField] private float _jumpForce = 0.5f;
+    [SerializeField] private float _jumpForce = 1f;
     
     private Vector3 _movementInput3D;
 
@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            _rigidbody.AddForce(_movementInput3D, _selectedForceMode);
+            _rigidbody.AddForce(_movementInput3D * _velocity, _selectedForceMode);
         }
     }
 
