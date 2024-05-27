@@ -22,6 +22,7 @@ public class EnemyBehaviour : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             GameManager.instance.DecreaseHealth(1);
+            AkSoundEngine.PostEvent("Play_EnemyHit", gameObject);
         }
     }
 }

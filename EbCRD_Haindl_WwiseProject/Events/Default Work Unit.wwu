@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_CollectCoin" ID="{E6254FD2-FFD1-4550-A0BA-7ADCF47BEA52}">
+					<ChildrenList>
+						<Action Name="" ID="{EE9F7E0A-08CB-4B94-A9A9-CD5FB5407547}" ShortID="507393050">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CollectCoin" ID="{0D2ED1A5-F75D-459E-AD6A-EA268F246DF8}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BirdsChirping" ID="{B7F3E70B-2F10-4099-B08C-350D4CAA913F}">
+					<ChildrenList>
+						<Action Name="" ID="{3B02D583-076C-4F7E-BA64-5CEE0B13533E}" ShortID="242595370">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BirdsChirping" ID="{50CA4BC2-57CC-4601-9EFA-E8954866F357}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_EnemyHit" ID="{6E5B70D6-9058-45A6-8AB0-FFBAC62D8914}">
+					<ChildrenList>
+						<Action Name="" ID="{6B028B89-FB28-47AF-9BA2-9ED18A39E9D5}" ShortID="521745086">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemyHit" ID="{2DB227F9-9EDD-4890-9AB9-89BAB034670C}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Cockcrow" ID="{32AD132D-7C8A-481F-B8CF-AC47AE4493F6}">
+					<ChildrenList>
+						<Action Name="" ID="{3CECC9DC-9214-4D86-A3F9-CF1D1B20C5EB}" ShortID="1037357165">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cockcrow" ID="{62509833-3EAF-481E-9920-6E5ED896D751}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_GenWind" ID="{40CD437D-7C43-4BA3-9857-9E3DEA5F74CF}">
+					<ChildrenList>
+						<Action Name="" ID="{2E23B979-CBCD-4A63-9801-39CCAEDC853E}" ShortID="460474700">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wind" ID="{A5632BDE-8D7F-4E0C-8538-84A033DAB5E6}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Footsteps" ID="{9FBFA0FA-DD5D-4540-B242-29946AAB5094}">
+					<ChildrenList>
+						<Action Name="" ID="{FA8D50E1-E442-4C2C-9831-EF269C64BAA6}" ShortID="821194090">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{95E36525-966B-4BB9-BFF9-D4DE64F774B4}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

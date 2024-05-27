@@ -24,6 +24,7 @@ public class Collectable : MonoBehaviour
         if (other.gameObject.CompareTag("Player")) {
             Destroy(gameObject);
             GameManager.instance.AddCollectedCoin();
+            AkSoundEngine.PostEvent("Play_CollectCoin", gameObject);
         }
     }
 }

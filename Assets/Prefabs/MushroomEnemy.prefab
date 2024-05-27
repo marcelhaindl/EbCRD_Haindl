@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 332234969713930052}
   - component: {fileID: 2421314972034470937}
   - component: {fileID: 4407852156216202827}
+  - component: {fileID: 654295746843006952}
   m_Layer: 0
   m_Name: MushroomEnemy
   m_TagString: Untagged
@@ -33,7 +34,7 @@ Transform:
   - {fileID: 1865783601920561339}
   - {fileID: 3839721978683575335}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &2421314972034470937
 CapsuleCollider:
@@ -72,6 +73,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dinstanceToMove: {x: 3, y: 0, z: 3}
   velocityFactor: 0.6
+--- !u!114 &654295746843006952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715003214096205010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0021f55bfa6f76c4a99c67082cbae9c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5896292659680634229
 GameObject:
   m_ObjectHideFlags: 0

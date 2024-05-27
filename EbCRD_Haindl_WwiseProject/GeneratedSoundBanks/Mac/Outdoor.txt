@@ -1,0 +1,35 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1523249583	Play_Cockcrow			\Default Work Unit\Play_Cockcrow	
+	2228638855	Play_CollectCoin			\Default Work Unit\Play_CollectCoin	
+	2534390857	Play_EnemyHit			\Default Work Unit\Play_EnemyHit	
+	2905789278	Play_GenWind			\Default Work Unit\Play_GenWind	
+	3347625526	Play_BirdsChirping			\Default Work Unit\Play_BirdsChirping	
+	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3865314626	Material			\Default Work Unit\Material	
+
+Switch	ID	Name	Switch Group			Notes
+	841620460	Concrete	Material			
+	4248645337	Grass	Material			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	1052835834	SoundSeed Air Wind	SoundSeed Air Wind		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\SoundSeed Air Wind	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	70934194	CockCrow2	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\CockCrow2_29B24425.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cockcrow\CockCrow2		407692
+	85033680	RetroCoin2	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin2		78708
+	242657276	RetroCoin5	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin5		62708
+	323897850	FootstepsConcrete	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\FootstepsConcrete_46C698D7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepsConcrete		161396
+	399613811	EnemySound2	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\EnemySound2_6D307544.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnemyHit\EnemySound2		197252
+	441915156	FootstepsGrass	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\FootstepsGrass_100763F5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepsGrass		209688
+	443558062	RetroCoin7	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin7		37172
+	681286019	RetroCoin6	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin6		47236
+	791193041	RetroCoin1	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin1		42230
+	883627108	CockCrow3	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\CockCrow3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cockcrow\CockCrow3		471768
+	939306109	RetroCoin3	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin3		78352
+	999215835	RetroCoin4	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin4		78204
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	504058029	BirdsChirping	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\BirdsChirping_D79FB2B7.wem	504058029.wem	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdsChirping	
+

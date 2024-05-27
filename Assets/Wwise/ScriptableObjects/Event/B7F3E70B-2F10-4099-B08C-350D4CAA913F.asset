@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9bd6d7ef2e4a84e9f5f889b6157ded, type: 3}
+  m_Name: B7F3E70B-2F10-4099-B08C-350D4CAA913F
+  m_EditorClassIdentifier: 
+  objectName: Play_BirdsChirping
+  id: 3347625526
+  guid: B7F3E70B-2F10-4099-B08C-350D4CAA913F

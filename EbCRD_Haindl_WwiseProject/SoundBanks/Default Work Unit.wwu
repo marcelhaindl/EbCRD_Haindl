@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{882266FE-253D-4A99-9B22-221B423070F9}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{882266FE-253D-4A99-9B22-221B423070F9}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Outdoor" ID="{BE0C7747-C74A-4F41-9EBA-6323A3D5A916}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_BirdsChirping" ID="{B7F3E70B-2F10-4099-B08C-350D4CAA913F}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Footsteps" ID="{9FBFA0FA-DD5D-4540-B242-29946AAB5094}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CollectCoin" ID="{E6254FD2-FFD1-4550-A0BA-7ADCF47BEA52}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_EnemyHit" ID="{6E5B70D6-9058-45A6-8AB0-FFBAC62D8914}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Cockcrow" ID="{32AD132D-7C8A-481F-B8CF-AC47AE4493F6}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_GenWind" ID="{40CD437D-7C43-4BA3-9857-9E3DEA5F74CF}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
