@@ -3,144 +3,6 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="Alarm1" ID="{D8611A05-A64F-4AF6-809C-64C2624A907A}" ShortID="302426277">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Alarm1" ID="{BD7F2366-3A5C-437A-8191-5C5A04927376}">
-							<Language>SFX</Language>
-							<AudioFile>Alarm1.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="885107636"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="Alarm1" ID="{BD7F2366-3A5C-437A-8191-5C5A04927376}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Alarm3" ID="{741AF56D-DEA0-4282-A713-FA2F01906914}" ShortID="544072035">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Alarm3" ID="{E807BE4C-1C6B-4ABA-9A35-0D4330C4D097}">
-							<Language>SFX</Language>
-							<AudioFile>Alarm3.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="224245284"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="Alarm3" ID="{E807BE4C-1C6B-4ABA-9A35-0D4330C4D097}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="CafeAmbience" ID="{3E7BA2FC-9277-49E6-883D-E3C5537EFAB1}" ShortID="339512192">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="CafeAmbience" ID="{51E10C9F-AFC5-4547-BD46-8D8A2D9E51E9}">
-							<Language>SFX</Language>
-							<AudioFile>CafeAmbience.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="431597754"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="CafeAmbience" ID="{51E10C9F-AFC5-4547-BD46-8D8A2D9E51E9}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="LightWindAndOwlSound" ID="{2804F809-01C4-4028-805D-108D86F7750D}" ShortID="529400628">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="LightWindAndOwlSound" ID="{85EAB0CA-B5F7-4182-9280-E366F65CD38B}">
-							<Language>SFX</Language>
-							<AudioFile>LightWindAndOwlSound.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="818149887"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="LightWindAndOwlSound" ID="{85EAB0CA-B5F7-4182-9280-E366F65CD38B}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="BallRolling" ID="{E5D744CE-BFD4-4FBA-9684-50899EFDC47E}" ShortID="227903934">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="BallRolling" ID="{6BD8A790-7D12-4C86-BA74-9B0167E6895E}">
-							<Language>SFX</Language>
-							<AudioFile>BallRolling.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="494626512"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="BallRolling" ID="{6BD8A790-7D12-4C86-BA74-9B0167E6895E}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="MovingThroughGrass" ID="{4C0CD2BD-F004-4E65-9E39-E0A891FF8C7C}" ShortID="110810148">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="MovingThroughGrass" ID="{68E27F05-7EC3-4AAF-A677-60F158397229}">
-							<Language>SFX</Language>
-							<AudioFile>MovingThroughGrass.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="423620608"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="MovingThroughGrass" ID="{68E27F05-7EC3-4AAF-A677-60F158397229}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<RandomSequenceContainer Name="CollectCoin" ID="{0D2ED1A5-F75D-459E-AD6A-EA268F246DF8}" ShortID="969782558">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -333,6 +195,7 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-11</Value>
@@ -341,7 +204,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+									<ObjectRef Name="Music" ID="{25917152-5D5D-46C2-8118-4CADE6858200}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
@@ -359,6 +222,76 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="BirdsChirping" ID="{93C0E4B0-B583-492D-B341-ABA929CFCB3A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="CafeAmbience" ID="{3E7BA2FC-9277-49E6-883D-E3C5537EFAB1}" ShortID="339512192">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Music" ID="{25917152-5D5D-46C2-8118-4CADE6858200}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CafeAmbience" ID="{51E10C9F-AFC5-4547-BD46-8D8A2D9E51E9}">
+									<Language>SFX</Language>
+									<AudioFile>CafeAmbience.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="431597754"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="CafeAmbience" ID="{51E10C9F-AFC5-4547-BD46-8D8A2D9E51E9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="JazzMusic" ID="{70BC0203-4597-48B9-A795-28F6D32DE3F6}" ShortID="194308548">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-25</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Music" ID="{25917152-5D5D-46C2-8118-4CADE6858200}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="683500__sergequadrado__latin-jazz-loop-2" ID="{5CBEFF28-C8F7-4ED1-AD17-A49038D13D3A}">
+									<Language>SFX</Language>
+									<AudioFile>683500__sergequadrado__latin-jazz-loop-2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="992121572"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="683500__sergequadrado__latin-jazz-loop-2" ID="{5CBEFF28-C8F7-4ED1-AD17-A49038D13D3A}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -386,9 +319,8 @@
 							<ChildrenList>
 								<AudioFileSource Name="EnemySound2" ID="{11F557A5-B3AF-4970-8C43-3D001DCCC5CF}">
 									<PropertyList>
-										<Property Name="LoopBegin" Type="Real64" Value="0.20424713239506"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.20424713239506"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.222904611573387"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>EnemySound2.wav</AudioFile>
@@ -419,6 +351,7 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-9</Value>
@@ -665,6 +598,438 @@
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>
+				<RandomSequenceContainer Name="Alarm" ID="{369323EE-807C-441B-9D33-B6F5F90B7938}" ShortID="837895500">
+					<PropertyList>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Alarm1" ID="{D8611A05-A64F-4AF6-809C-64C2624A907A}" ShortID="302426277">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Alarm1" ID="{BD7F2366-3A5C-437A-8191-5C5A04927376}">
+									<Language>SFX</Language>
+									<AudioFile>Alarm1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="885107636"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Alarm1" ID="{BD7F2366-3A5C-437A-8191-5C5A04927376}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Alarm3" ID="{741AF56D-DEA0-4282-A713-FA2F01906914}" ShortID="544072035">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Alarm3" ID="{E807BE4C-1C6B-4ABA-9A35-0D4330C4D097}">
+									<Language>SFX</Language>
+									<AudioFile>Alarm3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="224245284"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Alarm3" ID="{E807BE4C-1C6B-4ABA-9A35-0D4330C4D097}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+				<SwitchContainer Name="BallRoll" ID="{6F8A3835-F479-424F-B9DB-B98F4D91CD0C}" ShortID="829042249">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{3126C7E3-557E-4D4C-986F-52A900019517}" ShortID="191018948">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="PlayerSpeed" ID="{4844A839-4B64-4C82-B9ED-80414BCE799E}" WorkUnitID="{7A5ECCEE-89DA-4C93-B9F2-BD3CF5CFE666}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{813FC946-78BA-4309-85E8-935AE5430C51}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>178.54914</XPos>
+												<YPos>-10.21901</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>350</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Concrete" ID="{601E144A-5C71-4780-92B3-A2C770788D51}" WorkUnitID="{28B86E63-B458-4816-8666-A120A14A702E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Material" ID="{7D9C78F4-D87A-4CA2-A3C2-F78CE0135ECC}" WorkUnitID="{28B86E63-B458-4816-8666-A120A14A702E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="BallRollConcrete" ID="{E89D1425-61B0-432E-A5FF-56789A6B0B3A}" ShortID="393206598">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{64A54B52-04FE-414C-B980-99FD340DCEB0}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="655487__221227__golf-balls-rolling" ID="{18FEB792-470F-4C24-AECF-675BCDFE0839}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="4.22755193468008"/>
+										<Property Name="TrimEnd" Type="Real64" Value="5.02330763456733"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>655487__221227__golf-balls-rolling.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="286885925"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="655487__221227__golf-balls-rolling" ID="{18FEB792-470F-4C24-AECF-675BCDFE0839}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BallRollGrass" ID="{2DDF602A-EDFC-4BB1-A70F-38511D4EE5A5}" ShortID="771653798">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>82</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-1670</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="717304__curtiswcole__sytrus-white-noise" ID="{AC8EA61D-0BD2-4B3F-B50B-094EE85AD124}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.336041486603285"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>717304__curtiswcole__sytrus-white-noise.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="28529034"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="717304__curtiswcole__sytrus-white-noise" ID="{AC8EA61D-0BD2-4B3F-B50B-094EE85AD124}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="BallRollConcrete" ID="{E89D1425-61B0-432E-A5FF-56789A6B0B3A}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="BallRollGrass" ID="{2DDF602A-EDFC-4BB1-A70F-38511D4EE5A5}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Concrete" ID="{601E144A-5C71-4780-92B3-A2C770788D51}"/>
+								<ItemList>
+									<ItemRef Name="BallRollConcrete" ID="{E89D1425-61B0-432E-A5FF-56789A6B0B3A}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Grass" ID="{9ABAB1CB-7C94-4C32-A8B2-39EC39E8C35F}"/>
+								<ItemList>
+									<ItemRef Name="BallRollGrass" ID="{2DDF602A-EDFC-4BB1-A70F-38511D4EE5A5}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<Sound Name="EnemyMoving" ID="{D0FC4333-B6A1-4286-A596-94C01AF9D425}" ShortID="183164615">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>82</Value>
+							</ValueList>
+						</Property>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-1670</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-20</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="717304__curtiswcole__sytrus-white-noise" ID="{8E46B73C-8AE7-4906-81FD-B37B78002A8E}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.336041486603285"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>717304__curtiswcole__sytrus-white-noise.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="28529034"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="717304__curtiswcole__sytrus-white-noise" ID="{8E46B73C-8AE7-4906-81FD-B37B78002A8E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="EnemyScream" ID="{EF74382D-9975-4D4D-811E-32B218FF8E1B}" ShortID="375347842">
+					<PropertyList>
+						<Property Name="InitialDelay" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{2AB88667-9644-49B6-843C-79AB1DE06BFA}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="30"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{DF959D24-B116-424D-A389-5A2AC4BB8B9F}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Min" Type="Real64" Value="-36"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="632240__audacitier__sick-fly-enemy-dead-sound" ID="{18FDE596-8C11-43C2-AE8F-9742E5528FE0}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.291503752177909"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.644639726244863"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>632240__audacitier__sick-fly-enemy-dead-sound.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="47745389"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="632240__audacitier__sick-fly-enemy-dead-sound" ID="{18FDE596-8C11-43C2-AE8F-9742E5528FE0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<SwitchContainer Name="BallHit" ID="{23C3EE23-8DA5-4A72-804E-B5A7AB87838A}" ShortID="861139724">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Concrete" ID="{601E144A-5C71-4780-92B3-A2C770788D51}" WorkUnitID="{28B86E63-B458-4816-8666-A120A14A702E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Material" ID="{7D9C78F4-D87A-4CA2-A3C2-F78CE0135ECC}" WorkUnitID="{28B86E63-B458-4816-8666-A120A14A702E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="BallHitGrass" ID="{CAD41FF9-EA5C-4F9E-9B93-5305BEF242D5}" ShortID="11291677">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="650976__nathanaelbray__bouncy-ball-bouncing-on-dry-grass" ID="{6CA9BB4B-DABC-494B-A6B9-E1FA25A223C8}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.849300775913938"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.02010987051115"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>650976__nathanaelbray__bouncy-ball-bouncing-on-dry-grass.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="992769287"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="650976__nathanaelbray__bouncy-ball-bouncing-on-dry-grass" ID="{6CA9BB4B-DABC-494B-A6B9-E1FA25A223C8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BallHitConcrete" ID="{33241211-7426-4C7A-814C-9ED97A16FDF5}" ShortID="931458210">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="324734__150112__whiteballhittingsolid" ID="{031F8EA4-5A6C-4E7D-BE6D-0D6B7EAE5F16}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.030639006459021"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>324734__150112__whiteballhittingsolid.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1046046069"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="324734__150112__whiteballhittingsolid" ID="{031F8EA4-5A6C-4E7D-BE6D-0D6B7EAE5F16}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="BallHitConcrete" ID="{33241211-7426-4C7A-814C-9ED97A16FDF5}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="BallHitGrass" ID="{CAD41FF9-EA5C-4F9E-9B93-5305BEF242D5}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Concrete" ID="{601E144A-5C71-4780-92B3-A2C770788D51}"/>
+								<ItemList>
+									<ItemRef Name="BallHitConcrete" ID="{33241211-7426-4C7A-814C-9ED97A16FDF5}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Grass" ID="{9ABAB1CB-7C94-4C32-A8B2-39EC39E8C35F}"/>
+								<ItemList>
+									<ItemRef Name="BallHitGrass" ID="{CAD41FF9-EA5C-4F9E-9B93-5305BEF242D5}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

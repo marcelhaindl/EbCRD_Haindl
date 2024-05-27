@@ -9,6 +9,16 @@
 							<ObjectRef Name="System" ID="{1C1513DB-ABE8-41AE-A6FF-A8F7C7581BEA}" WorkUnitID="{D772BFFE-669C-4D35-BC52-C18767DCE334}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="Reverb" ID="{67BECB46-F969-4467-BADE-2E308293306C}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+									<ObjectRef Name="Large_Church1" ID="{9B6E8B78-EF8C-494C-AADA-D01CF51B5FAC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</AuxBus>
+					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
 			</ChildrenList>

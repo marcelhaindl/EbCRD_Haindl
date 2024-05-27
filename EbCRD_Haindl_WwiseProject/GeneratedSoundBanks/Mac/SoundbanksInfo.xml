@@ -1,31 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
+		<File Id="431597754" Language="SFX">
+			<ShortName>CafeAmbience.wav</ShortName>
+			<Path>SFX\CafeAmbience_94611DC0.wem</Path>
+		</File>
 		<File Id="504058029" Language="SFX">
 			<ShortName>BirdsChirping.wav</ShortName>
-			<Path>SFX\BirdsChirping_D79FB2B7.wem</Path>
+			<Path>SFX\BirdsChirping_94611DC0.wem</Path>
+		</File>
+		<File Id="992121572" Language="SFX">
+			<ShortName>683500__sergequadrado__latin-jazz-loop-2.wav</ShortName>
+			<Path>SFX\683500__sergequadrado__latin-jazz-loop-2_94611DC0.wem</Path>
 		</File>
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="144697359" Language="SFX" Hash="2173186300">
+		<SoundBank Id="144697359" Language="SFX" Hash="2747971684">
 			<ObjectPath>\SoundBanks\Default Work Unit\Outdoor</ObjectPath>
 			<ShortName>Outdoor</ShortName>
 			<Path>Outdoor.bnk</Path>
 			<IncludedEvents>
+				<Event Id="603937113" Name="Play_Alarm" ObjectPath="\Events\Default Work Unit\Play_Alarm" DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<IncludedMemoryFiles>
+						<File Id="224245284" Language="SFX">
+							<ShortName>Alarm3.wav</ShortName>
+							<Path>SFX\Alarm3_1422FD1E.wem</Path>
+						</File>
+						<File Id="885107636" Language="SFX">
+							<ShortName>Alarm1.wav</ShortName>
+							<Path>SFX\Alarm1_1422FD1E.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3503206024" Name="Play_BallHit" ObjectPath="\Events\Default Work Unit\Play_BallHit" DurationType="OneShot" DurationMin="0.170809" DurationMax="0.369736">
+					<IncludedMemoryFiles>
+						<File Id="992769287" Language="SFX">
+							<ShortName>650976__nathanaelbray__bouncy-ball-bouncing-on-dry-grass.wav</ShortName>
+							<Path>SFX\650976__nathanaelbray__bouncy-ball-bouncing-on-dry-grass_79BE6A9B.wem</Path>
+						</File>
+						<File Id="1046046069" Language="SFX">
+							<ShortName>324734__150112__whiteballhittingsolid.wav</ShortName>
+							<Path>SFX\324734__150112__whiteballhittingsolid_A7F6FAC0.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{601E144A-5C71-4780-92B3-A2C770788D51}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{601E144A-5C71-4780-92B3-A2C770788D51}">
+							<Media>
+								<File Id="1046046069"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{9ABAB1CB-7C94-4C32-A8B2-39EC39E8C35F}">
+							<Media>
+								<File Id="992769287"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2998367848" Name="Play_BallRoll" ObjectPath="\Events\Default Work Unit\Play_BallRoll" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="28529034" Language="SFX">
+							<ShortName>717304__curtiswcole__sytrus-white-noise.wav</ShortName>
+							<Path>SFX\717304__curtiswcole__sytrus-white-noise_87C060D1.wem</Path>
+						</File>
+						<File Id="286885925" Language="SFX">
+							<ShortName>655487__221227__golf-balls-rolling.wav</ShortName>
+							<Path>SFX\655487__221227__golf-balls-rolling_A7A8BDDC.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{601E144A-5C71-4780-92B3-A2C770788D51}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{601E144A-5C71-4780-92B3-A2C770788D51}">
+							<Media>
+								<File Id="286885925"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{9ABAB1CB-7C94-4C32-A8B2-39EC39E8C35F}">
+							<Media>
+								<File Id="28529034"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="3347625526" Name="Play_BirdsChirping" ObjectPath="\Events\Default Work Unit\Play_BirdsChirping" DurationType="Infinite">
 					<ReferencedStreamedFiles>
 						<File Id="504058029" Language="SFX">
 							<ShortName>BirdsChirping.wav</ShortName>
-							<Path>SFX\BirdsChirping_D79FB2B7.wem</Path>
+							<Path>SFX\BirdsChirping_94611DC0.wem</Path>
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
@@ -33,11 +103,11 @@
 					<IncludedMemoryFiles>
 						<File Id="70934194" Language="SFX">
 							<ShortName>CockCrow2.wav</ShortName>
-							<Path>SFX\CockCrow2_29B24425.wem</Path>
+							<Path>SFX\CockCrow2_11682A36.wem</Path>
 						</File>
 						<File Id="883627108" Language="SFX">
 							<ShortName>CockCrow3.wav</ShortName>
-							<Path>SFX\CockCrow3_10C4C929.wem</Path>
+							<Path>SFX\CockCrow3_1422FD1E.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -45,39 +115,47 @@
 					<IncludedMemoryFiles>
 						<File Id="85033680" Language="SFX">
 							<ShortName>RetroCoin2.wav</ShortName>
-							<Path>SFX\RetroCoin2_10C4C929.wem</Path>
+							<Path>SFX\RetroCoin2_1422FD1E.wem</Path>
 						</File>
 						<File Id="242657276" Language="SFX">
 							<ShortName>RetroCoin5.wav</ShortName>
-							<Path>SFX\RetroCoin5_10C4C929.wem</Path>
+							<Path>SFX\RetroCoin5_1422FD1E.wem</Path>
 						</File>
 						<File Id="443558062" Language="SFX">
 							<ShortName>RetroCoin7.wav</ShortName>
-							<Path>SFX\RetroCoin7_10C4C929.wem</Path>
+							<Path>SFX\RetroCoin7_1422FD1E.wem</Path>
 						</File>
 						<File Id="681286019" Language="SFX">
 							<ShortName>RetroCoin6.wav</ShortName>
-							<Path>SFX\RetroCoin6_10C4C929.wem</Path>
+							<Path>SFX\RetroCoin6_1422FD1E.wem</Path>
 						</File>
 						<File Id="791193041" Language="SFX">
 							<ShortName>RetroCoin1.wav</ShortName>
-							<Path>SFX\RetroCoin1_10C4C929.wem</Path>
+							<Path>SFX\RetroCoin1_1422FD1E.wem</Path>
 						</File>
 						<File Id="939306109" Language="SFX">
 							<ShortName>RetroCoin3.wav</ShortName>
-							<Path>SFX\RetroCoin3_10C4C929.wem</Path>
+							<Path>SFX\RetroCoin3_1422FD1E.wem</Path>
 						</File>
 						<File Id="999215835" Language="SFX">
 							<ShortName>RetroCoin4.wav</ShortName>
-							<Path>SFX\RetroCoin4_10C4C929.wem</Path>
+							<Path>SFX\RetroCoin4_1422FD1E.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2534390857" Name="Play_EnemyHit" ObjectPath="\Events\Default Work Unit\Play_EnemyHit" DurationType="OneShot" DurationMin="1.117839" DurationMax="1.117839">
+				<Event Id="2534390857" Name="Play_EnemyHit" ObjectPath="\Events\Default Work Unit\Play_EnemyHit" DurationType="OneShot" DurationMin="1.099182" DurationMax="1.099182">
 					<IncludedMemoryFiles>
 						<File Id="399613811" Language="SFX">
 							<ShortName>EnemySound2.wav</ShortName>
-							<Path>SFX\EnemySound2_6D307544.wem</Path>
+							<Path>SFX\EnemySound2_9B25DF20.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4212099024" Name="Play_EnemyMoving" ObjectPath="\Events\Default Work Unit\Play_EnemyMoving" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="28529034" Language="SFX">
+							<ShortName>717304__curtiswcole__sytrus-white-noise.wav</ShortName>
+							<Path>SFX\717304__curtiswcole__sytrus-white-noise_87C060D1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -85,11 +163,11 @@
 					<IncludedMemoryFiles>
 						<File Id="323897850" Language="SFX">
 							<ShortName>FootstepsConcrete.wav</ShortName>
-							<Path>SFX\FootstepsConcrete_46C698D7.wem</Path>
+							<Path>SFX\FootstepsConcrete_7B0E10F8.wem</Path>
 						</File>
 						<File Id="441915156" Language="SFX">
 							<ShortName>FootstepsGrass.wav</ShortName>
-							<Path>SFX\FootstepsGrass_100763F5.wem</Path>
+							<Path>SFX\FootstepsGrass_CD02422E.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{601E144A-5C71-4780-92B3-A2C770788D51}</DefaultSwitchValue>
@@ -108,6 +186,9 @@
 				</Event>
 				<Event Id="2905789278" Name="Play_GenWind" ObjectPath="\Events\Default Work Unit\Play_GenWind" DurationType="Infinite"/>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="1493153371" Name="PlayerSpeed" ObjectPath="\Game Parameters\Default Work Unit\PlayerSpeed"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="3865314626" Name="Material" ObjectPath="\Switches\Default Work Unit\Material" GUID="{7D9C78F4-D87A-4CA2-A3C2-F78CE0135ECC}">
 					<Switches>
@@ -117,10 +198,97 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3020289020">
+		<SoundBank Id="340398852" Language="SFX" Hash="770167423">
+			<ObjectPath>\SoundBanks\Default Work Unit\Indoor</ObjectPath>
+			<ShortName>Indoor</ShortName>
+			<Path>Indoor.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3503206024" Name="Play_BallHit" ObjectPath="\Events\Default Work Unit\Play_BallHit" DurationType="OneShot" DurationMin="0.170809" DurationMax="0.369736">
+					<IncludedMemoryFiles>
+						<File Id="992769287" Language="SFX">
+							<ShortName>650976__nathanaelbray__bouncy-ball-bouncing-on-dry-grass.wav</ShortName>
+							<Path>SFX\650976__nathanaelbray__bouncy-ball-bouncing-on-dry-grass_79BE6A9B.wem</Path>
+						</File>
+						<File Id="1046046069" Language="SFX">
+							<ShortName>324734__150112__whiteballhittingsolid.wav</ShortName>
+							<Path>SFX\324734__150112__whiteballhittingsolid_A7F6FAC0.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{601E144A-5C71-4780-92B3-A2C770788D51}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{601E144A-5C71-4780-92B3-A2C770788D51}">
+							<Media>
+								<File Id="1046046069"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{9ABAB1CB-7C94-4C32-A8B2-39EC39E8C35F}">
+							<Media>
+								<File Id="992769287"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2998367848" Name="Play_BallRoll" ObjectPath="\Events\Default Work Unit\Play_BallRoll" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="28529034" Language="SFX">
+							<ShortName>717304__curtiswcole__sytrus-white-noise.wav</ShortName>
+							<Path>SFX\717304__curtiswcole__sytrus-white-noise_87C060D1.wem</Path>
+						</File>
+						<File Id="286885925" Language="SFX">
+							<ShortName>655487__221227__golf-balls-rolling.wav</ShortName>
+							<Path>SFX\655487__221227__golf-balls-rolling_A7A8BDDC.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{601E144A-5C71-4780-92B3-A2C770788D51}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{601E144A-5C71-4780-92B3-A2C770788D51}">
+							<Media>
+								<File Id="286885925"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{9ABAB1CB-7C94-4C32-A8B2-39EC39E8C35F}">
+							<Media>
+								<File Id="28529034"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="1944521141" Name="Play_CafeAmbience" ObjectPath="\Events\Default Work Unit\Play_CafeAmbience" DurationType="Infinite">
+					<ReferencedStreamedFiles>
+						<File Id="431597754" Language="SFX">
+							<ShortName>CafeAmbience.wav</ShortName>
+							<Path>SFX\CafeAmbience_94611DC0.wem</Path>
+						</File>
+					</ReferencedStreamedFiles>
+				</Event>
+				<Event Id="2923734310" Name="Play_JazzMusic" ObjectPath="\Events\Default Work Unit\Play_JazzMusic" DurationType="Infinite">
+					<ReferencedStreamedFiles>
+						<File Id="992121572" Language="SFX">
+							<ShortName>683500__sergequadrado__latin-jazz-loop-2.wav</ShortName>
+							<Path>SFX\683500__sergequadrado__latin-jazz-loop-2_94611DC0.wem</Path>
+						</File>
+					</ReferencedStreamedFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="1493153371" Name="PlayerSpeed" ObjectPath="\Game Parameters\Default Work Unit\PlayerSpeed"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="3865314626" Name="Material" ObjectPath="\Switches\Default Work Unit\Material" GUID="{7D9C78F4-D87A-4CA2-A3C2-F78CE0135ECC}">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete" ObjectPath="\Switches\Default Work Unit\Material\Concrete" GUID="{601E144A-5C71-4780-92B3-A2C770788D51}"/>
+						<Switch Id="4248645337" Name="Grass" ObjectPath="\Switches\Default Work Unit\Material\Grass" GUID="{9ABAB1CB-7C94-4C32-A8B2-39EC39E8C35F}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1576682870">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb"/>
+			</IncludedAuxBusses>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

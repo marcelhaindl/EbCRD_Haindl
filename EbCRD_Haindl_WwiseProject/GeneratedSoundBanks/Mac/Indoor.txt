@@ -1,0 +1,26 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1944521141	Play_CafeAmbience			\Default Work Unit\Play_CafeAmbience	
+	2923734310	Play_JazzMusic			\Default Work Unit\Play_JazzMusic	
+	2998367848	Play_BallRoll			\Default Work Unit\Play_BallRoll	
+	3503206024	Play_BallHit			\Default Work Unit\Play_BallHit	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3865314626	Material			\Default Work Unit\Material	
+
+Switch	ID	Name	Switch Group			Notes
+	841620460	Concrete	Material			
+	4248645337	Grass	Material			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1493153371	PlayerSpeed			\Default Work Unit\PlayerSpeed	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	28529034	BallRollGrass	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\717304__curtiswcole__sytrus-white-noise_87C060D1.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallRoll\BallRollGrass		3112
+	286885925	BallRollConcrete	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\655487__221227__golf-balls-rolling_A7A8BDDC.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallRoll\BallRollConcrete		1856
+	992769287	BallHitGrass	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\650976__nathanaelbray__bouncy-ball-bouncing-on-dry-grass_79BE6A9B.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallHit\BallHitGrass		1931
+	1046046069	BallHitConcrete	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\324734__150112__whiteballhittingsolid_A7F6FAC0.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallHit\BallHitConcrete		3061
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	431597754	CafeAmbience	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\CafeAmbience_94611DC0.wem	431597754.wem	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\CafeAmbience	
+	992121572	JazzMusic	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\683500__sergequadrado__latin-jazz-loop-2_94611DC0.wem	992121572.wem	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\JazzMusic	
+

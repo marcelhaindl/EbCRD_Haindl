@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{93C8C255-0ABE-4E6D-912C-F2EB84438B11}" SchemaVersion="103">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{93C8C255-0ABE-4E6D-912C-F2EB84438B11}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{93C8C255-0ABE-4E6D-912C-F2EB84438B11}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Wwise_Guitar_Distortion" ID="{BB586973-1377-422A-9D35-246DEDF5B76A}" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+					<PropertyList>
+						<Property Name="DistortionType" Type="int32" Value="4"/>
+						<Property Name="WetDryMix" Type="Real32" Value="99"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

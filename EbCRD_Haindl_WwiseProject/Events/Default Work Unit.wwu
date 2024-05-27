@@ -69,6 +69,72 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_CafeAmbience" ID="{2B1A15ED-4D08-4A2B-ADEB-E8CB647C2EF7}">
+					<ChildrenList>
+						<Action Name="" ID="{DB037C83-76AA-426F-9CA7-960DED3BF698}" ShortID="255718393">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CafeAmbience" ID="{3E7BA2FC-9277-49E6-883D-E3C5537EFAB1}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Alarm" ID="{E024BB0A-05C2-4A75-9F19-2599F05A8E95}">
+					<ChildrenList>
+						<Action Name="" ID="{B935132C-CE87-40A6-B87D-9F3E034772C6}" ShortID="15043228">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Alarm" ID="{369323EE-807C-441B-9D33-B6F5F90B7938}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BallRoll" ID="{A98AF157-B1A9-4D0C-BD02-56E3EC6A18EF}">
+					<ChildrenList>
+						<Action Name="" ID="{15A3E282-3F32-49D9-8302-D1EDE41939EF}" ShortID="417084118">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BallRoll" ID="{6F8A3835-F479-424F-B9DB-B98F4D91CD0C}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_EnemyMoving" ID="{F742DA10-3978-4183-A169-5CFDA5A07083}">
+					<ChildrenList>
+						<Action Name="" ID="{BDE1775E-CCD3-4BCA-BBA4-0CDF57924116}" ShortID="380638640">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemyMoving" ID="{D0FC4333-B6A1-4286-A596-94C01AF9D425}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_JazzMusic" ID="{9823783E-9392-4D53-A76F-DDF548C88964}">
+					<ChildrenList>
+						<Action Name="" ID="{D4B124E0-FA15-4A5B-BB9E-F97FF44881D2}" ShortID="601878081">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="JazzMusic" ID="{70BC0203-4597-48B9-A795-28F6D32DE3F6}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BallHit" ID="{6A4EF29B-CB7D-4C46-8109-C8B25920300C}">
+					<ChildrenList>
+						<Action Name="" ID="{2EF7CAE3-9AA6-4ECD-817C-602E5AB74514}" ShortID="116055070">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BallHit" ID="{23C3EE23-8DA5-4A72-804E-B5A7AB87838A}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

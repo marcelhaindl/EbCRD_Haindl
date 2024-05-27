@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -18,10 +20,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private MovementType _movementType;
 
     [SerializeField] private float _jumpForce = 1f;
+
+    [SerializeField] private float maxSpeed = 850f;
     
     private Vector3 _movementInput3D;
 
     private Rigidbody _rigidbody;
+
+    private bool isJumping = false;
 
 
     // Start is called before the first frame update
@@ -44,7 +50,11 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            _rigidbody.AddForce(_movementInput3D * _velocity, _selectedForceMode);
+            if (_rigidbody.velocity.magnitude * 100 < maxSpeed)
+            {
+                _rigidbody.AddForce(_movementInput3D * _velocity, _selectedForceMode);
+            }
+            AkSoundEngine.SetRTPCValue("PlayerSpeed", _rigidbody.velocity.magnitude * 100);
         }
     }
 
@@ -54,9 +64,19 @@ public class PlayerMovement : MonoBehaviour
         _movementInput3D = new Vector3(-movementInput.x, 0f, -movementInput.y);
     }
 
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Ground") && isJumping)
+        {
+            AkSoundEngine.PostEvent("Play_BallHit", gameObject);
+            isJumping = false;
+        }
+    }
+
     void OnJump(InputValue inputValue)
     {
         Vector3 jumpForceVector = new Vector3(0f, _jumpForce, 0f);
         _rigidbody.AddForce(jumpForceVector, ForceMode.Impulse);
+        isJumping = true;
     }
 }

@@ -108,7 +108,6 @@
 							<PropertyList>
 								<Property Name="Ratio" Type="Real32" Value="50"/>
 								<Property Name="ReleaseTime" Type="Real32" Value="0.1"/>
-								<Property Name="Threshold" Type="Real32" Value="-50"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Noise_Gate_Slow_Attack" ID="{8D16DAF8-FD63-4A83-894E-2E82DA790C71}" PluginName="Wwise Expander" CompanyID="0" PluginID="109" PluginType="3">
@@ -708,6 +707,7 @@
 								<Property Name="HFRatio" Type="Real32" Value="6"/>
 								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
 								<Property Name="PreDelay" Type="Real32" Value="0.1"/>
+								<Property Name="ReverbTime" Type="Real32" Value="6"/>
 								<Property Name="WetLevel" Type="Real32" Value="-30"/>
 							</PropertyList>
 						</Effect>
@@ -747,7 +747,7 @@
 						<Effect Name="Tunnel1" ID="{CC44B890-9865-4157-965F-86FED27BC4C6}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 							<PropertyList>
 								<Property Name="HFRatio" Type="Real32" Value="9.5"/>
-								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
+								<Property Name="NumberOfDelays" Type="int32" Value="4"/>
 								<Property Name="ReverbTime" Type="Real32" Value="5"/>
 								<Property Name="WetLevel" Type="Real32" Value="-30"/>
 							</PropertyList>
