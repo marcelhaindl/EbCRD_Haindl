@@ -9,6 +9,12 @@
 						<Property Name="Max" Type="Real64" Value="350"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="AlarmDistance" ID="{6188CC53-7AD4-4F16-8AD0-62D988764EDE}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="10"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

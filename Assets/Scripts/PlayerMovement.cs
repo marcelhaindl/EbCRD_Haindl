@@ -77,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 jumpForceVector = new Vector3(0f, _jumpForce, 0f);
         _rigidbody.AddForce(jumpForceVector, ForceMode.Impulse);
+        AkSoundEngine.PostEvent("Play_Jump", gameObject);
         isJumping = true;
     }
 }

@@ -5,16 +5,17 @@
 			<ChildrenList>
 				<SoundBank Name="Outdoor" ID="{BE0C7747-C74A-4F41-9EBA-6323A3D5A916}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_Win" ID="{A9E34C7B-4B42-4001-8A2E-12CA0FF0A886}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BirdsChirping" ID="{B7F3E70B-2F10-4099-B08C-350D4CAA913F}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_EnemyMoving" ID="{F742DA10-3978-4183-A169-5CFDA5A07083}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Footsteps" ID="{9FBFA0FA-DD5D-4540-B242-29946AAB5094}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Cockcrow" ID="{58A15AA3-D1A4-4116-B662-83D7712C1375}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_CollectCoin" ID="{E6254FD2-FFD1-4550-A0BA-7ADCF47BEA52}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_EnemyHit" ID="{6E5B70D6-9058-45A6-8AB0-FFBAC62D8914}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Cockcrow" ID="{32AD132D-7C8A-481F-B8CF-AC47AE4493F6}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Alarm" ID="{E024BB0A-05C2-4A75-9F19-2599F05A8E95}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Loose" ID="{FCDF55FC-E66D-4A8F-A931-65829834458B}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_GenWind" ID="{40CD437D-7C43-4BA3-9857-9E3DEA5F74CF}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BallHit" ID="{6A4EF29B-CB7D-4C46-8109-C8B25920300C}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_BallRoll" ID="{A98AF157-B1A9-4D0C-BD02-56E3EC6A18EF}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Jump" ID="{F1800897-76BE-4F13-A439-E7F85F84089D}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
@@ -22,9 +23,8 @@
 				<SoundBank Name="Indoor" ID="{15BC1549-476A-4C5B-9A5B-2703D74B3290}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_CafeAmbience" ID="{2B1A15ED-4D08-4A2B-ADEB-E8CB647C2EF7}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_BallHit" ID="{6A4EF29B-CB7D-4C46-8109-C8B25920300C}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_BallRoll" ID="{A98AF157-B1A9-4D0C-BD02-56E3EC6A18EF}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_JazzMusic" ID="{9823783E-9392-4D53-A76F-DDF548C88964}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Jump" ID="{F1800897-76BE-4F13-A439-E7F85F84089D}" WorkUnitID="{6D35A82D-AAAA-423D-9535-2959BD759ED2}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

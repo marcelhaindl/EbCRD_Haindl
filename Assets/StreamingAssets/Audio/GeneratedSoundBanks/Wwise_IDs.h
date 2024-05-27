@@ -21,11 +21,29 @@ namespace AK
         static const AkUniqueID PLAY_COCKCROW = 1523249583U;
         static const AkUniqueID PLAY_COLLECTCOIN = 2228638855U;
         static const AkUniqueID PLAY_ENEMYHIT = 2534390857U;
-        static const AkUniqueID PLAY_ENEMYMOVING = 4212099024U;
-        static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_GENWIND = 2905789278U;
         static const AkUniqueID PLAY_JAZZMUSIC = 2923734310U;
+        static const AkUniqueID PLAY_JUMP = 3689126666U;
+        static const AkUniqueID PLAY_LOOSE = 2498806176U;
+        static const AkUniqueID PLAY_WIN = 2955987680U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace GAMESTATE
+        {
+            static const AkUniqueID GROUP = 4091656514U;
+
+            namespace STATE
+            {
+                static const AkUniqueID LOOSE = 174960569U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID PLAY = 1256202815U;
+                static const AkUniqueID WIN = 979765101U;
+            } // namespace STATE
+        } // namespace GAMESTATE
+
+    } // namespace STATES
 
     namespace SWITCHES
     {
@@ -44,6 +62,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID ALARMDISTANCE = 1006419845U;
         static const AkUniqueID PLAYERSPEED = 1493153371U;
     } // namespace GAME_PARAMETERS
 

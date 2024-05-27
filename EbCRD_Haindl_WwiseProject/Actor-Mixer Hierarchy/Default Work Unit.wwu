@@ -219,6 +219,35 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="GameState" ID="{DD4A36AF-A832-4B6F-B1C0-66F7EFE5F358}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Win" ID="{0E9E99AF-9E66-42CB-958D-47D3F5E29CDA}"/>
+										<CustomState Name="" ID="{8802372B-ADC1-4D8D-8CD2-A8ED4A5E1E99}" ShortID="348054418">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-200"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Play" ID="{AC5B5AC8-F7C1-47E6-B5C5-4420097E2794}"/>
+										<CustomState Name="" ID="{D4430138-1225-4380-8338-692330DFA8C2}" ShortID="932674308"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Loose" ID="{D43C49FD-92C6-4A3E-9E92-D2B6D6707B54}"/>
+										<CustomState Name="" ID="{08D22C2B-322A-49AF-A2BA-E68C527E2F85}" ShortID="697501185">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-200"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="BirdsChirping" ID="{93C0E4B0-B583-492D-B341-ABA929CFCB3A}" Platform="Linked"/>
@@ -233,6 +262,7 @@
 									</ValueList>
 								</Property>
 								<Property Name="OverrideConversion" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -266,6 +296,7 @@
 								</Property>
 								<Property Name="OverrideConversion" Type="bool" Value="True"/>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-25</Value>
@@ -334,50 +365,7 @@
 								<ActiveSource Name="EnemySound2" ID="{11F557A5-B3AF-4970-8C43-3D001DCCC5CF}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-					</ChildrenList>
-					<ObjectLists/>
-				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="Cockcrow" ID="{62509833-3EAF-481E-9920-6E5ED896D751}" ShortID="110928087">
-					<PropertyList>
-						<Property Name="InitialDelay" Type="Real64">
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{A39120A1-535D-4F5F-850F-5B08F1D7C0F6}">
-										<PropertyList>
-											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="30"/>
-										</PropertyList>
-									</Modifier>
-								</ModifierInfo>
-							</ModifierList>
-						</Property>
-						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-9</Value>
-							</ValueList>
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{523848BD-3B15-4B3D-844F-0AC627F89ABE}">
-										<PropertyList>
-											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Min" Type="Real64" Value="-20"/>
-										</PropertyList>
-									</Modifier>
-								</ModifierInfo>
-							</ModifierList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="CockCrow2" ID="{A260DBBB-B392-492B-9265-0F2612E518EF}" ShortID="960781407">
+						<Sound Name="EnemySound1" ID="{61CC390C-DDAC-4489-B758-ECCB271A9886}" ShortID="1072686743">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
@@ -387,25 +375,20 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="CockCrow2" ID="{ADDC2620-3594-4863-BC08-D8F2BBF42C29}">
-									<PropertyList>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.724285714285714"/>
-										<Property Name="TrimEnd" Type="Real64" Value="3.03510204081633"/>
-									</PropertyList>
+								<AudioFileSource Name="413186__micahlg__male_hurt9" ID="{C06B4F6C-2CFC-4F0C-B3E2-6DE4D83D58CE}">
 									<Language>SFX</Language>
-									<AudioFile>CockCrow2.wav</AudioFile>
+									<AudioFile>413186__micahlg__male_hurt9.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="70934194"/>
+										<MediaID ID="535295329"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ObjectLists/>
 							<ActiveSourceList>
-								<ActiveSource Name="CockCrow2" ID="{ADDC2620-3594-4863-BC08-D8F2BBF42C29}" Platform="Linked"/>
+								<ActiveSource Name="413186__micahlg__male_hurt9" ID="{C06B4F6C-2CFC-4F0C-B3E2-6DE4D83D58CE}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="CockCrow3" ID="{35926416-7E92-47C8-88EA-D8DE32DEC269}" ShortID="1012545103">
+						<Sound Name="EnemySound3" ID="{B11CF8B6-89F7-4371-8F1C-4728DC508055}" ShortID="1021763540">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
@@ -415,17 +398,40 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="CockCrow3" ID="{5F9B0929-DBBF-4C6C-8904-5F83E90ACA65}">
+								<AudioFileSource Name="44428__thecheeseman__hurt1" ID="{1504E70C-6A0E-4CFD-ABF3-A4025AA3EA81}">
 									<Language>SFX</Language>
-									<AudioFile>CockCrow3.wav</AudioFile>
+									<AudioFile>44428__thecheeseman__hurt1.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="883627108"/>
+										<MediaID ID="328534281"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ObjectLists/>
 							<ActiveSourceList>
-								<ActiveSource Name="CockCrow3" ID="{5F9B0929-DBBF-4C6C-8904-5F83E90ACA65}" Platform="Linked"/>
+								<ActiveSource Name="44428__thecheeseman__hurt1" ID="{1504E70C-6A0E-4CFD-ABF3-A4025AA3EA81}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="EnemySound4" ID="{C138B702-41CC-4E92-B60C-B4CDCA8B2745}" ShortID="711163309">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="632242__audacitier__male-hurt-1" ID="{BB43FFEC-2BAB-4404-8C54-C7EAFD2A2535}">
+									<Language>SFX</Language>
+									<AudioFile>632242__audacitier__male-hurt-1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="66443225"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="632242__audacitier__male-hurt-1" ID="{BB43FFEC-2BAB-4404-8C54-C7EAFD2A2535}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -600,7 +606,40 @@
 				</ActorMixer>
 				<RandomSequenceContainer Name="Alarm" ID="{369323EE-807C-441B-9D33-B6F5F90B7938}" ShortID="837895500">
 					<PropertyList>
-						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>60</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{21527AE3-0102-494F-82AD-813AE9C93558}" ShortID="610527389">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="AlarmDistance" ID="{6188CC53-7AD4-4F16-8AD0-62D988764EDE}" WorkUnitID="{7A5ECCEE-89DA-4C93-B9F2-BD3CF5CFE666}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{C01C76A4-67D5-4467-9187-A07F4B835B06}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>10</XPos>
+												<YPos>-200</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -612,6 +651,25 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="Alarm1" ID="{D8611A05-A64F-4AF6-809C-64C2624A907A}" ShortID="302426277">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OutputBusVolume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
@@ -635,6 +693,14 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Alarm3" ID="{741AF56D-DEA0-4282-A713-FA2F01906914}" ShortID="544072035">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
@@ -822,106 +888,6 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
-				<Sound Name="EnemyMoving" ID="{D0FC4333-B6A1-4286-A596-94C01AF9D425}" ShortID="183164615">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="Highpass" Type="int16">
-							<ValueList>
-								<Value>82</Value>
-							</ValueList>
-						</Property>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="Pitch" Type="int32">
-							<ValueList>
-								<Value>-1670</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-20</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="717304__curtiswcole__sytrus-white-noise" ID="{8E46B73C-8AE7-4906-81FD-B37B78002A8E}">
-							<PropertyList>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimEnd" Type="Real64" Value="0.336041486603285"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>717304__curtiswcole__sytrus-white-noise.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="28529034"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="717304__curtiswcole__sytrus-white-noise" ID="{8E46B73C-8AE7-4906-81FD-B37B78002A8E}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="EnemyScream" ID="{EF74382D-9975-4D4D-811E-32B218FF8E1B}" ShortID="375347842">
-					<PropertyList>
-						<Property Name="InitialDelay" Type="Real64">
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{2AB88667-9644-49B6-843C-79AB1DE06BFA}">
-										<PropertyList>
-											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="30"/>
-										</PropertyList>
-									</Modifier>
-								</ModifierInfo>
-							</ModifierList>
-						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{DF959D24-B116-424D-A389-5A2AC4BB8B9F}">
-										<PropertyList>
-											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Min" Type="Real64" Value="-36"/>
-										</PropertyList>
-									</Modifier>
-								</ModifierInfo>
-							</ModifierList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="632240__audacitier__sick-fly-enemy-dead-sound" ID="{18FDE596-8C11-43C2-AE8F-9742E5528FE0}">
-							<PropertyList>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="0.291503752177909"/>
-								<Property Name="TrimEnd" Type="Real64" Value="0.644639726244863"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>632240__audacitier__sick-fly-enemy-dead-sound.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="47745389"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="632240__audacitier__sick-fly-enemy-dead-sound" ID="{18FDE596-8C11-43C2-AE8F-9742E5528FE0}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<SwitchContainer Name="BallHit" ID="{23C3EE23-8DA5-4A72-804E-B5A7AB87838A}" ShortID="861139724">
 					<PropertyList>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -1030,6 +996,328 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<RandomSequenceContainer Name="Cockcrow" ID="{80EF879E-0593-47A4-9090-5FA88C3EDF2F}" ShortID="712496431">
+					<PropertyList>
+						<Property Name="InitialDelay" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{22742A15-9BEE-4C75-BD13-736D431026B2}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="30"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{EEAAE53A-9522-4297-8462-3AA5F39519ED}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="10"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{E4C06814-1868-4A60-B0C8-663B040D5667}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Min" Type="Real64" Value="-30"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="CockCrow2" ID="{A260DBBB-B392-492B-9265-0F2612E518EF}" ShortID="960781407">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CockCrow2" ID="{ADDC2620-3594-4863-BC08-D8F2BBF42C29}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.724285714285714"/>
+										<Property Name="TrimEnd" Type="Real64" Value="3.03510204081633"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>CockCrow2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="70934194"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="CockCrow2" ID="{ADDC2620-3594-4863-BC08-D8F2BBF42C29}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="CockCrow3" ID="{35926416-7E92-47C8-88EA-D8DE32DEC269}" ShortID="1012545103">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CockCrow3" ID="{5F9B0929-DBBF-4C6C-8904-5F83E90ACA65}">
+									<Language>SFX</Language>
+									<AudioFile>CockCrow3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="883627108"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="CockCrow3" ID="{5F9B0929-DBBF-4C6C-8904-5F83E90ACA65}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+					<Playlist>
+						<ItemRef Name="CockCrow2" ID="{A260DBBB-B392-492B-9265-0F2612E518EF}"/>
+						<ItemRef Name="CockCrow3" ID="{35926416-7E92-47C8-88EA-D8DE32DEC269}"/>
+					</Playlist>
+				</RandomSequenceContainer>
+				<ActorMixer Name="Jump" ID="{14201139-1413-48D2-B9C1-6EC154865A5B}" ShortID="1013650642">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Jump" ID="{F0C8BD80-F090-4BAE-8D2C-D2DC47EB3A87}" ShortID="1057841736">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>2400</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="SoundSeed Air Woosh" ID="{8C7A0099-1FE1-49B9-8952-077C1A6F5390}" ShortID="260367411" PluginName="SoundSeed Air Woosh" CompanyID="0" PluginID="120">
+									<PropertyList>
+										<Property Name="SpeedAutomate" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<PluginData>
+	<WooshData>
+		<CurveList Version="1">
+			<CurveInfo Name="Speed">
+				<Curve Name="" ID="{F811CD66-1300-4A1C-8574-5F6F45774990}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.25</XPos>
+							<YPos>100</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.5</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+		<Path Version="1">
+			<Path2D Name="" ID="{F05F7F2A-81AC-4024-B9E3-1137AD90F68E}">
+				<PropertyList>
+					<Property Name="LinearTime" Type="bool" Value="False"/>
+				</PropertyList>
+				<PointList>
+					<Point>
+						<XPos>0</XPos>
+						<YPos>0</YPos>
+						<Flags>12</Flags>
+						<Time>0</Time>
+					</Point>
+				</PointList>
+			</Path2D>
+		</Path>
+	</WooshData>
+</PluginData>
+									<PluginInnerObjectList>
+										<List Name="Deflectors">
+											<PluginInnerObject Name="" ID="{DD3CC5B1-A499-435A-A748-6B9AABEF271C}" PluginName="Deflector" CompanyID="0" PluginID="122"/>
+										</List>
+									</PluginInnerObjectList>
+								</SourcePlugin>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="SoundSeed Air Woosh" ID="{8C7A0099-1FE1-49B9-8952-077C1A6F5390}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<Sound Name="Loose" ID="{3EC400B0-DC6D-440B-9479-30365C88E98F}" ShortID="677409799">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="433707__dersuperanton__you-win-you-loose-deep-voice" ID="{9553B5A8-0662-460E-AEAC-4814A99E6B79}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="2.62528193499622"/>
+								<Property Name="TrimEnd" Type="Real64" Value="3.55383824640968"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>433707__dersuperanton__you-win-you-loose-deep-voice.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="532064581"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="GameState" ID="{DD4A36AF-A832-4B6F-B1C0-66F7EFE5F358}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Win" ID="{0E9E99AF-9E66-42CB-958D-47D3F5E29CDA}"/>
+								<CustomState Name="" ID="{EF1B3DA6-F650-4BF9-871F-ACEB23469927}" ShortID="250037888">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-200"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Play" ID="{AC5B5AC8-F7C1-47E6-B5C5-4420097E2794}"/>
+								<CustomState Name="" ID="{B107083F-BC24-40B3-A469-6B331B0349D7}" ShortID="689550897">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-200"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Loose" ID="{D43C49FD-92C6-4A3E-9E92-D2B6D6707B54}"/>
+								<CustomState Name="" ID="{DB5BB803-6F3F-442B-99F9-030046477523}" ShortID="1056176213"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="433707__dersuperanton__you-win-you-loose-deep-voice" ID="{9553B5A8-0662-460E-AEAC-4814A99E6B79}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Win" ID="{C64C79E7-6C21-480B-A2B1-8BB7E5122955}" ShortID="816945625">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6A9BB8C7-3DF6-4D54-9783-F6A8DA2D14CE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05EDA65D-82DA-495B-8147-AB619F246AD2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="433707__dersuperanton__you-win-you-loose-deep-voice" ID="{5FBE1253-C86D-4DE5-9086-016190650859}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.160386999244142"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.953880574452002"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>433707__dersuperanton__you-win-you-loose-deep-voice.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="815430084"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="GameState" ID="{DD4A36AF-A832-4B6F-B1C0-66F7EFE5F358}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Win" ID="{0E9E99AF-9E66-42CB-958D-47D3F5E29CDA}"/>
+								<CustomState Name="" ID="{423684E5-2D71-423D-9327-19B0286F6BAC}" ShortID="233090567"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Play" ID="{AC5B5AC8-F7C1-47E6-B5C5-4420097E2794}"/>
+								<CustomState Name="" ID="{BBCAB3C0-9140-49F1-8768-BCCA972204FA}" ShortID="630462418">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-200"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Loose" ID="{D43C49FD-92C6-4A3E-9E92-D2B6D6707B54}"/>
+								<CustomState Name="" ID="{50388AB8-3C53-4E2A-9F63-88CED35F7841}" ShortID="595196539">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-200"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="433707__dersuperanton__you-win-you-loose-deep-voice" ID="{5FBE1253-C86D-4DE5-9086-016190650859}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

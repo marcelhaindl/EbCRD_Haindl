@@ -2,13 +2,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	603937113	Play_Alarm			\Default Work Unit\Play_Alarm	
 	1523249583	Play_Cockcrow			\Default Work Unit\Play_Cockcrow	
 	2228638855	Play_CollectCoin			\Default Work Unit\Play_CollectCoin	
+	2498806176	Play_Loose			\Default Work Unit\Play_Loose	
 	2534390857	Play_EnemyHit			\Default Work Unit\Play_EnemyHit	
 	2905789278	Play_GenWind			\Default Work Unit\Play_GenWind	
+	2955987680	Play_Win			\Default Work Unit\Play_Win	
 	2998367848	Play_BallRoll			\Default Work Unit\Play_BallRoll	
 	3347625526	Play_BirdsChirping			\Default Work Unit\Play_BirdsChirping	
 	3503206024	Play_BallHit			\Default Work Unit\Play_BallHit	
-	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
-	4212099024	Play_EnemyMoving			\Default Work Unit\Play_EnemyMoving	
+	3689126666	Play_Jump			\Default Work Unit\Play_Jump	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	3865314626	Material			\Default Work Unit\Material	
@@ -17,32 +18,54 @@ Switch	ID	Name	Switch Group			Notes
 	841620460	Concrete	Material			
 	4248645337	Grass	Material			
 
+State Group	ID	Name			Wwise Object Path	Notes
+	4091656514	GameState			\Default Work Unit\GameState	
+
+State	ID	Name	State Group			Notes
+	174960569	Loose	GameState			
+	748895195	None	GameState			
+	979765101	Win	GameState			
+	1256202815	Play	GameState			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	250037888	Win	GameState	\Actor-Mixer Hierarchy\Default Work Unit\Loose		
+	348054418	Win	GameState	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdsChirping		
+	595196539	Loose	GameState	\Actor-Mixer Hierarchy\Default Work Unit\Win		
+	630462418	Play	GameState	\Actor-Mixer Hierarchy\Default Work Unit\Win		
+	689550897	Play	GameState	\Actor-Mixer Hierarchy\Default Work Unit\Loose		
+	697501185	Loose	GameState	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdsChirping		
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	1006419845	AlarmDistance			\Default Work Unit\AlarmDistance	
 	1493153371	PlayerSpeed			\Default Work Unit\PlayerSpeed	
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	260367411	SoundSeed Air Woosh	SoundSeed Air Woosh		\Actor-Mixer Hierarchy\Default Work Unit\Jump\Jump\SoundSeed Air Woosh	
 	1052835834	SoundSeed Air Wind	SoundSeed Air Wind		\Actor-Mixer Hierarchy\Default Work Unit\Wind\Wind\SoundSeed Air Wind	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	28529034	EnemyMoving	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\717304__curtiswcole__sytrus-white-noise_87C060D1.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnemyMoving		3112
-	70934194	CockCrow2	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\CockCrow2_11682A36.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cockcrow\CockCrow2		17054
-	85033680	RetroCoin2	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin2_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin2		3869
-	224245284	Alarm3	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\Alarm3_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alarm\Alarm3		119637
-	242657276	RetroCoin5	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin5_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin5		3639
-	286885925	BallRollConcrete	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\655487__221227__golf-balls-rolling_A7A8BDDC.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallRoll\BallRollConcrete		1856
-	323897850	FootstepsConcrete	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\FootstepsConcrete_7B0E10F8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepsConcrete		7439
-	399613811	EnemySound2	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\EnemySound2_9B25DF20.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnemyHit\EnemySound2		2584
-	441915156	FootstepsGrass	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\FootstepsGrass_CD02422E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepsGrass		12514
-	443558062	RetroCoin7	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin7_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin7		2452
-	681286019	RetroCoin6	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin6_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin6		2862
-	791193041	RetroCoin1	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin1_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin1		4354
-	883627108	CockCrow3	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\CockCrow3_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cockcrow\CockCrow3		11691
-	885107636	Alarm1	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\Alarm1_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alarm\Alarm1		22141
-	939306109	RetroCoin3	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin3_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin3		1924
-	992769287	BallHitGrass	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\650976__nathanaelbray__bouncy-ball-bouncing-on-dry-grass_79BE6A9B.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallHit\BallHitGrass		1931
-	999215835	RetroCoin4	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin4_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin4		4063
-	1046046069	BallHitConcrete	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\324734__150112__whiteballhittingsolid_A7F6FAC0.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallHit\BallHitConcrete		3061
+	28529034	BallRollGrass	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\717304__curtiswcole__sytrus-white-noise_4892FA99.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallRoll\BallRollGrass		3112
+	66443225	EnemySound4	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\632242__audacitier__male-hurt-1_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnemyHit\EnemySound4		3407
+	70934194	CockCrow2	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\CockCrow2_11682A36.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cockcrow\CockCrow2		17054
+	85033680	RetroCoin2	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin2_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin2		3869
+	242657276	RetroCoin5	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin5_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin5		3639
+	286885925	BallRollConcrete	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\655487__221227__golf-balls-rolling_CA056DE7.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallRoll\BallRollConcrete		1856
+	328534281	EnemySound3	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\44428__thecheeseman__hurt1_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnemyHit\EnemySound3		6898
+	399613811	EnemySound2	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\EnemySound2_FC18C79B.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnemyHit\EnemySound2		2584
+	443558062	RetroCoin7	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin7_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin7		2452
+	532064581	Loose	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\433707__dersuperanton__you-win-you-loose-deep-voice_684C17C4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loose		7458
+	535295329	EnemySound1	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\413186__micahlg__male_hurt9_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnemyHit\EnemySound1		3341
+	681286019	RetroCoin6	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin6_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin6		2862
+	791193041	RetroCoin1	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin1_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin1		4354
+	815430084	Win	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\433707__dersuperanton__you-win-you-loose-deep-voice_9A033A1C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Win		6263
+	883627108	CockCrow3	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\CockCrow3_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cockcrow\CockCrow3		11691
+	939306109	RetroCoin3	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin3_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin3		1924
+	992769287	BallHitGrass	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\650976__nathanaelbray__bouncy-ball-bouncing-on-dry-grass_4066D18B.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallHit\BallHitGrass		1931
+	999215835	RetroCoin4	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\RetroCoin4_1422FD1E.wem		\Actor-Mixer Hierarchy\Default Work Unit\CollectCoin\RetroCoin4		4063
+	1046046069	BallHitConcrete	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\324734__150112__whiteballhittingsolid_E976F236.wem		\Actor-Mixer Hierarchy\Default Work Unit\BallHit\BallHitConcrete		3061
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	504058029	BirdsChirping	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\BirdsChirping_94611DC0.wem	504058029.wem	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdsChirping	
+	224245284	Alarm3	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\Alarm3_70EA28A8.wem	224245284.wem	\Actor-Mixer Hierarchy\Default Work Unit\Alarm\Alarm3	
+	504058029	BirdsChirping	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\BirdsChirping_94611DC0.wem	504058029.wem	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdsChirping	
+	885107636	Alarm1	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\SFX\Alarm1_70EA28A8.wem	885107636.wem	\Actor-Mixer Hierarchy\Default Work Unit\Alarm\Alarm1	
 

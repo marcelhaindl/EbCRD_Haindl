@@ -36,34 +36,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Cockcrow" ID="{32AD132D-7C8A-481F-B8CF-AC47AE4493F6}">
-					<ChildrenList>
-						<Action Name="" ID="{3CECC9DC-9214-4D86-A3F9-CF1D1B20C5EB}" ShortID="1037357165">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Cockcrow" ID="{62509833-3EAF-481E-9920-6E5ED896D751}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_GenWind" ID="{40CD437D-7C43-4BA3-9857-9E3DEA5F74CF}">
 					<ChildrenList>
 						<Action Name="" ID="{2E23B979-CBCD-4A63-9801-39CCAEDC853E}" ShortID="460474700">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Wind" ID="{A5632BDE-8D7F-4E0C-8538-84A033DAB5E6}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Footsteps" ID="{9FBFA0FA-DD5D-4540-B242-29946AAB5094}">
-					<ChildrenList>
-						<Action Name="" ID="{FA8D50E1-E442-4C2C-9831-EF269C64BAA6}" ShortID="821194090">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{95E36525-966B-4BB9-BFF9-D4DE64F774B4}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -102,17 +80,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_EnemyMoving" ID="{F742DA10-3978-4183-A169-5CFDA5A07083}">
-					<ChildrenList>
-						<Action Name="" ID="{BDE1775E-CCD3-4BCA-BBA4-0CDF57924116}" ShortID="380638640">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="EnemyMoving" ID="{D0FC4333-B6A1-4286-A596-94C01AF9D425}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_JazzMusic" ID="{9823783E-9392-4D53-A76F-DDF548C88964}">
 					<ChildrenList>
 						<Action Name="" ID="{D4B124E0-FA15-4A5B-BB9E-F97FF44881D2}" ShortID="601878081">
@@ -130,6 +97,50 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="BallHit" ID="{23C3EE23-8DA5-4A72-804E-B5A7AB87838A}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Cockcrow" ID="{58A15AA3-D1A4-4116-B662-83D7712C1375}">
+					<ChildrenList>
+						<Action Name="" ID="{F5924621-53AF-4EF6-B77E-07F3A75FA3EB}" ShortID="241297408">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cockcrow" ID="{80EF879E-0593-47A4-9090-5FA88C3EDF2F}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Jump" ID="{F1800897-76BE-4F13-A439-E7F85F84089D}">
+					<ChildrenList>
+						<Action Name="" ID="{01D02509-6EC9-446D-BC59-D82FBDA0AE1A}" ShortID="613457384">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jump" ID="{F0C8BD80-F090-4BAE-8D2C-D2DC47EB3A87}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Loose" ID="{FCDF55FC-E66D-4A8F-A931-65829834458B}">
+					<ChildrenList>
+						<Action Name="" ID="{0350413F-8C74-4921-846A-74BAD012B326}" ShortID="893660183">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Loose" ID="{3EC400B0-DC6D-440B-9479-30365C88E98F}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Win" ID="{A9E34C7B-4B42-4001-8A2E-12CA0FF0A886}">
+					<ChildrenList>
+						<Action Name="" ID="{1F09F0B6-D4C7-4C10-918D-0C04ED37BBB1}" ShortID="788692876">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Win" ID="{C64C79E7-6C21-480B-A2B1-8BB7E5122955}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -16,18 +16,17 @@ public class GameManager : MonoBehaviour
     public int GetCollectedCoins() => collectedCoins;
     public void AddCollectedCoin() => collectedCoins++;
     public void DropCollectedCoin() => collectedCoins--;
-    
+
     // Start is called before the first frame update
     void Start()
     {
         if (instance != null) return;
         instance = this;
-        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 }

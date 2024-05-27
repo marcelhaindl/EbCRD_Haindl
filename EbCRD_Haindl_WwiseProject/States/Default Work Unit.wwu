@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5A55FDF5-DC1A-49DC-A27A-9BAEFA604824}" SchemaVersion="103">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{5A55FDF5-DC1A-49DC-A27A-9BAEFA604824}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5A55FDF5-DC1A-49DC-A27A-9BAEFA604824}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="GameState" ID="{DD4A36AF-A832-4B6F-B1C0-66F7EFE5F358}">
+					<ChildrenList>
+						<State Name="None" ID="{71ACC622-F1B2-453F-A2A4-3D2053FE3206}"/>
+						<State Name="Win" ID="{0E9E99AF-9E66-42CB-958D-47D3F5E29CDA}"/>
+						<State Name="Loose" ID="{D43C49FD-92C6-4A3E-9E92-D2B6D6707B54}"/>
+						<State Name="Play" ID="{AC5B5AC8-F7C1-47E6-B5C5-4420097E2794}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Play" ID="{AC5B5AC8-F7C1-47E6-B5C5-4420097E2794}"/>
+							<EndState Name="Win" ID="{0E9E99AF-9E66-42CB-958D-47D3F5E29CDA}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Play" ID="{AC5B5AC8-F7C1-47E6-B5C5-4420097E2794}"/>
+							<EndState Name="Loose" ID="{D43C49FD-92C6-4A3E-9E92-D2B6D6707B54}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

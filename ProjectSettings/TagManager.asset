@@ -7,6 +7,8 @@ TagManager:
   - Grass
   - Fluid
   - Ground
+  - Alarm
+  - Coin
   layers:
   - Default
   - TransparentFX

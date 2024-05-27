@@ -8,9 +8,12 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.310DEAF1" = ""
+	"last_search.310DEAF1" = "alarm"
 	"OpenInspectorPreview.310DEAF1" = "0"
 	"currentGroup.310DEAF1" = "all"
+	"last_search.3BE40471" = "ref:Assets/Wwise/ScriptableObjects/Event/E024BB0A-05C2-4A75-9F19-2599F05A8E95.asset"
+	"OpenInspectorPreview.3BE40471" = "0"
+	"currentGroup.3BE40471" = "all"
 }
 providers = {
 	adb = {
@@ -62,6 +65,7 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"ref:Assets/Wwise/ScriptableObjects/Event/E024BB0A-05C2-4A75-9F19-2599F05A8E95.asset"
 	""
 ]
 searchItemFavorites = [
