@@ -1,10 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using Unity.VisualScripting;
 using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Quaternion = UnityEngine.Quaternion;
+using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 internal enum MovementType
 {
@@ -20,23 +24,26 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private MovementType _movementType;
 
-    [SerializeField] private float _jumpForce = 1f;
+    [SerializeField] private float _jumpForce = 100f;
 
     [SerializeField] private float maxSpeed = 850f;
-    
+
     [SerializeField] private Animator animator;
+    [SerializeField] private float jumpingMaxHeight = 3f;
+    [SerializeField] private float fallFactor = 0.9f;
+
+    private bool isOnGround = false;
+    private bool isJumping = false;
 
     private Vector3 _movementInput3D;
 
     private Rigidbody _rigidbody;
 
-    private bool isJumping = false;
-
-
     // Start is called before the first frame update
     void Start()
     {
         _rigidbody = gameObject.GetComponent<Rigidbody>();
+        StartCoroutine(CheckForGround());
     }
 
     // Update is called once per frame
@@ -47,6 +54,14 @@ public class PlayerMovement : MonoBehaviour
 
     void PerformMovement()
     {
+        if (_movementInput3D != Vector3.zero)
+        {
+            transform.forward = Camera.main.transform.forward;
+            Quaternion cameraAlignedForwardRotation = transform.rotation;
+            transform.forward = _movementInput3D;
+            transform.rotation *= cameraAlignedForwardRotation;
+        }
+
         if (_movementInput3D == Vector3.zero)
         {
             animator.SetBool("isWalking", false);
@@ -55,7 +70,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (_movementType == MovementType.TransformBased)
         {
-            gameObject.transform.position += _movementInput3D * _velocity;
+            float movementStrength = Vector3.Magnitude(_movementInput3D);
+            transform.Translate(new Vector3(0, 0, -1) * (_velocity * movementStrength));
             animator.SetBool("isWalking", true);
         }
         else
@@ -64,6 +80,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 _rigidbody.AddForce(_movementInput3D * _velocity, _selectedForceMode);
             }
+
             AkSoundEngine.SetRTPCValue("PlayerSpeed", _rigidbody.velocity.magnitude * 100);
         }
     }
@@ -74,22 +91,57 @@ public class PlayerMovement : MonoBehaviour
         _movementInput3D = new Vector3(-movementInput.x, 0f, -movementInput.y);
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.CompareTag("Ground") && isJumping)
-        {
-            AkSoundEngine.PostEvent("Play_BallHit", gameObject);
-            isJumping = false;
-            animator.SetBool("isJumping", false);
-        }
-    }
-
     void OnJump(InputValue inputValue)
     {
-        Vector3 jumpForceVector = new Vector3(0f, _jumpForce, 0f);
-        _rigidbody.AddForce(jumpForceVector, ForceMode.Impulse);
-        AkSoundEngine.PostEvent("Play_Jump", gameObject);
-        isJumping = true;
         animator.SetBool("isJumping", true);
+        
+        if (isJumping || !isOnGround)
+            return;
+
+        AkSoundEngine.PostEvent("Play_Jump", gameObject);
+        StartCoroutine(JumpControlFlow());
+    }
+
+    private IEnumerator JumpControlFlow()
+    {
+        isJumping = true;
+        float jumpHeight = transform.position.y + jumpingMaxHeight;
+
+        _rigidbody.AddForce(Vector3.up * _jumpForce, ForceMode.Force);
+        while (transform.position.y < jumpHeight)
+        {
+            yield return null;
+        }
+
+        _rigidbody.AddForce(Vector3.up * (_jumpForce * -1 * fallFactor), ForceMode.Force);
+        isJumping = false;
+    }
+
+    private IEnumerator CheckForGround()
+    {
+        RaycastHit hit;
+        float prevY;
+        float currentY = transform.position.y;
+        while (true)
+        {
+            bool raycastSuccess = Physics.Raycast(transform.position, transform.up * -1, out hit);
+            if (raycastSuccess && (hit.collider.gameObject.CompareTag("Ground") || hit.collider.gameObject.CompareTag("Grass")) && hit.distance <= 0.50001f)
+            {
+                if (!isOnGround)
+                {
+                    AkSoundEngine.PostEvent("Play_BallHit", gameObject);
+                    animator.SetBool("isJumping", false);
+                }
+                isJumping = false;
+                StopCoroutine(JumpControlFlow());
+                isOnGround = true;
+            }
+            else
+            {
+                isOnGround = false;
+            }
+
+            yield return null;
+        }
     }
 }

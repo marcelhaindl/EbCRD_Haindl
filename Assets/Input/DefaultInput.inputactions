@@ -120,7 +120,7 @@
             "id": "6bd44479-4c4c-4508-aab4-048fdfd7d78a",
             "actions": [
                 {
-                    "name": "CameraMovement",
+                    "name": "CameraRotation",
                     "type": "Value",
                     "id": "6aaa9d7f-de10-4ac3-a7d3-57a3963394af",
                     "expectedControlType": "Vector2",
@@ -137,7 +137,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "CameraMovement",
+                    "action": "CameraRotation",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
