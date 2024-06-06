@@ -2,10 +2,10 @@
 <ValidationCache Version="1" SchemaVersion="103">
 	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1716793301" DateHigh="0"/>
 	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1716793301" DateHigh="0"/>
-	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1716793301" DateHigh="0"/>
-	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\States\Default Work Unit.wwu" DateLow="1716793301" DateHigh="0"/>
+	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1716816497" DateHigh="0"/>
+	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\States\Default Work Unit.wwu" DateLow="1716880353" DateHigh="0"/>
 	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1716793301" DateHigh="0"/>
-	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1716793301" DateHigh="0"/>
+	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1716880353" DateHigh="0"/>
 	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Queries\Factory Queries.wwu" DateLow="1716793301" DateHigh="0"/>
 	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1716793301" DateHigh="0"/>
 	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1716793301" DateHigh="0"/>
@@ -13,21 +13,21 @@
 	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1716793300" DateHigh="0"/>
 	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1716793300" DateHigh="0"/>
 	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Metadata\Default Work Unit.wwu" DateLow="1716793300" DateHigh="0"/>
-	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1716793300" DateHigh="0"/>
+	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1716816368" DateHigh="0"/>
 	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1716793300" DateHigh="0"/>
-	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1716793300" DateHigh="0"/>
-	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Events\Default Work Unit.wwu" DateLow="1716793300" DateHigh="0"/>
-	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Effects\Factory Effects.wwu" DateLow="1716793300" DateHigh="0"/>
-	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1716793300" DateHigh="0"/>
+	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1716880353" DateHigh="0"/>
+	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Events\Default Work Unit.wwu" DateLow="1716880353" DateHigh="0"/>
+	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Effects\Factory Effects.wwu" DateLow="1716816368" DateHigh="0"/>
+	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1716816368" DateHigh="0"/>
 	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\EbCRD_Haindl_WwiseProject.wproj" DateLow="1716793300" DateHigh="0"/>
-	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\EbCRD_Haindl_WwiseProject.Haind.wsettings" DateLow="1716793452" DateHigh="0"/>
+	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\EbCRD_Haindl_WwiseProject.Haind.wsettings" DateLow="1716917767" DateHigh="0"/>
 	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1716793300" DateHigh="0"/>
 	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1716793300" DateHigh="0"/>
-	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1716793300" DateHigh="0"/>
+	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1716817826" DateHigh="0"/>
 	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1716793300" DateHigh="0"/>
 	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1716793300" DateHigh="0"/>
 	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1716793300" DateHigh="0"/>
-	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1716793300" DateHigh="0"/>
+	<ValidationCacheItem File="D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1716880353" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl_WwiseIntegrationTemp\EbCRD_Haindl_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1716578802" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl_WwiseIntegrationTemp\EbCRD_Haindl_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1716578802" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl_WwiseIntegrationTemp\EbCRD_Haindl_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1716578802" DateHigh="0"/>

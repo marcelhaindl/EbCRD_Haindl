@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -23,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private float maxSpeed = 850f;
     
+    [SerializeField] private Animator animator;
+
     private Vector3 _movementInput3D;
 
     private Rigidbody _rigidbody;
@@ -44,9 +47,16 @@ public class PlayerMovement : MonoBehaviour
 
     void PerformMovement()
     {
+        if (_movementInput3D == Vector3.zero)
+        {
+            animator.SetBool("isWalking", false);
+            return;
+        }
+
         if (_movementType == MovementType.TransformBased)
         {
             gameObject.transform.position += _movementInput3D * _velocity;
+            animator.SetBool("isWalking", true);
         }
         else
         {
@@ -70,6 +80,7 @@ public class PlayerMovement : MonoBehaviour
         {
             AkSoundEngine.PostEvent("Play_BallHit", gameObject);
             isJumping = false;
+            animator.SetBool("isJumping", false);
         }
     }
 
@@ -79,5 +90,6 @@ public class PlayerMovement : MonoBehaviour
         _rigidbody.AddForce(jumpForceVector, ForceMode.Impulse);
         AkSoundEngine.PostEvent("Play_Jump", gameObject);
         isJumping = true;
+        animator.SetBool("isJumping", true);
     }
 }

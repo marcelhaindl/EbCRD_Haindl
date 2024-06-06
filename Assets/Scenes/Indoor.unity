@@ -2409,6 +2409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0375f2f5a66d4c4eb2fc4fe0e24c01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winLooseText: {fileID: 0}
 --- !u!114 &182016155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3510,7 +3511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1007109778542104238, guid: 9b70668684787ea459c52e8d537e2019, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1449191204946914171, guid: 9b70668684787ea459c52e8d537e2019, type: 3}
       propertyPath: _velocity
@@ -11432,6 +11433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0440a477fb8e79e4a9e0ab3ed8a1b7e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winLooseText: {fileID: 0}
 --- !u!114 &915836036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11591,6 +11593,10 @@ PrefabInstance:
     - target: {fileID: 1007109778542104238, guid: 9b70668684787ea459c52e8d537e2019, type: 3}
       propertyPath: m_Name
       value: PlayerCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007109778542104238, guid: 9b70668684787ea459c52e8d537e2019, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1449191204946914171, guid: 9b70668684787ea459c52e8d537e2019, type: 3}
       propertyPath: _velocity
