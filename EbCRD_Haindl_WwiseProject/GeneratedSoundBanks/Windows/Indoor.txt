@@ -2,11 +2,23 @@ Event	ID	Name			Wwise Object Path	Notes
 	1944521141	Play_CafeAmbience			\Default Work Unit\Play_CafeAmbience	
 	2923734310	Play_JazzMusic			\Default Work Unit\Play_JazzMusic	
 	3689126666	Play_Jump			\Default Work Unit\Play_Jump	
+	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3865314626	Material			\Default Work Unit\Material	
+
+Switch	ID	Name	Switch Group			Notes
+	841620460	Concrete	Material			
+	4248645337	Grass	Material			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	260367411	SoundSeed Air Woosh	SoundSeed Air Woosh		\Actor-Mixer Hierarchy\Default Work Unit\Jump\Jump\SoundSeed Air Woosh	
 
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	323897850	FootstepsConcrete	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Windows\SFX\FootstepsConcrete_2287CA02.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepsConcrete		7439
+	441915156	FootstepsGrass	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Windows\SFX\FootstepsGrass_3F194F68.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepsGrass		12514
+
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	431597754	CafeAmbience	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Windows\SFX\CafeAmbience_94611DC0.wem	431597754.wem	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\CafeAmbience	
-	992121572	JazzMusic	D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Windows\SFX\683500__sergequadrado__latin-jazz-loop-2_94611DC0.wem	992121572.wem	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\JazzMusic	
+	431597754	CafeAmbience	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Windows\SFX\CafeAmbience_94611DC0.wem	431597754.wem	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\CafeAmbience	
+	992121572	JazzMusic	D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Windows\SFX\683500__sergequadrado__latin-jazz-loop-2_94611DC0.wem	992121572.wem	\Actor-Mixer Hierarchy\Default Work Unit\Ambience\JazzMusic	
 

@@ -146,6 +146,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Car" ID="{9A838C49-80B7-464A-83FF-D8902C788BB6}">
+					<ChildrenList>
+						<Action Name="" ID="{628095F1-D826-42A7-9827-8D59A3871942}" ShortID="976112006">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Car" ID="{4CBBA883-C705-4E1F-89F2-A0B817014480}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Footsteps" ID="{9BAE5623-1487-4390-B066-3FD843ED07C1}">
+					<ChildrenList>
+						<Action Name="" ID="{6DCEFC64-525A-4066-A91B-F5EC86F176CB}" ShortID="743150917">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{95E36525-966B-4BB9-BFF9-D4DE64F774B4}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Bark" ID="{6DA2FC84-61F7-4A63-A575-393EAB0695B1}">
+					<ChildrenList>
+						<Action Name="" ID="{B9092497-9A10-4356-AA32-EB9E30035DC3}" ShortID="727569752">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bark" ID="{431457DE-9329-489B-A5EB-0D6C724FAF46}" WorkUnitID="{20ABE3F3-1A1C-49EF-A84F-3E1B6A50C55B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

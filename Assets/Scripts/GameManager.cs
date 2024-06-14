@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     public int GetCollectedCoins() => collectedCoins;
     public void AddCollectedCoin() => collectedCoins++;
     public void DropCollectedCoin() => collectedCoins--;
-
+    
     // Start is called before the first frame update
     void Start()
     {

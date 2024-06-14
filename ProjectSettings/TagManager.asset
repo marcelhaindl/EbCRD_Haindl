@@ -11,6 +11,8 @@ TagManager:
   - Coin
   - TurnCar
   - RaycastCarPlayerZone
+  - Concrete
+  - BarkingHouse
   layers:
   - Default
   - TransparentFX

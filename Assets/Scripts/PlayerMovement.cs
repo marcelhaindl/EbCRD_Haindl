@@ -31,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private float jumpingMaxHeight = 3f;
     [SerializeField] private float fallFactor = 0.9f;
+    [SerializeField] private GameObject barkingHouse;
 
     private bool isOnGround = false;
     private bool isJumping = false;
@@ -72,6 +73,9 @@ public class PlayerMovement : MonoBehaviour
         {
             float movementStrength = Vector3.Magnitude(_movementInput3D);
             transform.Translate(new Vector3(0, 0, -1) * (_velocity * movementStrength));
+            float distanceBetweenPlayerAndBarkingHouse = Vector3.Distance(gameObject.transform.position,
+                barkingHouse.gameObject.transform.position);
+            AkSoundEngine.SetRTPCValue("BarkDistance", 50 - distanceBetweenPlayerAndBarkingHouse);
             animator.SetBool("isWalking", true);
         }
         else
@@ -80,9 +84,9 @@ public class PlayerMovement : MonoBehaviour
             {
                 _rigidbody.AddForce(_movementInput3D * _velocity, _selectedForceMode);
             }
-
-            AkSoundEngine.SetRTPCValue("PlayerSpeed", _rigidbody.velocity.magnitude * 100);
         }
+
+        
     }
 
     void OnMovement(InputValue inputValue)
@@ -120,16 +124,13 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator CheckForGround()
     {
         RaycastHit hit;
-        float prevY;
-        float currentY = transform.position.y;
         while (true)
         {
             bool raycastSuccess = Physics.Raycast(transform.position, transform.up * -1, out hit);
-            if (raycastSuccess && (hit.collider.gameObject.CompareTag("Ground") || hit.collider.gameObject.CompareTag("Grass")) && hit.distance <= 0.50001f)
+            if (raycastSuccess && hit.collider.gameObject.CompareTag("Ground") && hit.distance <= 0.6)
             {
                 if (!isOnGround)
                 {
-                    AkSoundEngine.PostEvent("Play_BallHit", gameObject);
                     animator.SetBool("isJumping", false);
                 }
                 isJumping = false;

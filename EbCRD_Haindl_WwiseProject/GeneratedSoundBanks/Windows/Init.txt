@@ -11,10 +11,12 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	121027811	ReverbHouse			\Default Work Unit\Master Audio Bus\ReverbHouse	
 	348963605	Reverb			\Default Work Unit\Master Audio Bus\Reverb	
 
 Effect plug-ins	ID	Name	Type				Notes
 	2662085913	Large_Church1	Wwise Matrix Reverb			
+	3546444380	Big_Garage1	Wwise Matrix Reverb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

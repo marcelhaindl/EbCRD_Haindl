@@ -6,11 +6,13 @@ public class MoveCar : MonoBehaviour
 {
     [SerializeField] private float originalVelocity = .5f;
     private float currentVelocity;
+    private float soundFactor;
     
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(CheckForVelocity());
+        soundFactor = 10 / originalVelocity;
     }
     
     // Update is called once per frame
@@ -38,6 +40,7 @@ public class MoveCar : MonoBehaviour
             {
                 currentVelocity = originalVelocity;
             }
+            AkSoundEngine.SetRTPCValue("CarSpeed", currentVelocity * soundFactor);
             yield return null;
         }
     }

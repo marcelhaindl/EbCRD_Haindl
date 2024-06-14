@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Documents\FHSTP\04_SS24\EngineBasedCrossRealityDevelopment\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\fhstp\04_ss24\engine_based_cross_reality_development\EbCRD_Haindl\EbCRD_Haindl_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
@@ -21,6 +21,10 @@
 			<ShortName>BirdsChirping.wav</ShortName>
 			<Path>SFX\BirdsChirping_94611DC0.wem</Path>
 		</File>
+		<File Id="655955015" Language="SFX">
+			<ShortName>185743__enric592__car-motor.wav</ShortName>
+			<Path>SFX\185743__enric592__car-motor_3573D42F.wem</Path>
+		</File>
 		<File Id="885107636" Language="SFX">
 			<ShortName>Alarm1.wav</ShortName>
 			<Path>SFX\Alarm1_70EA28A8.wem</Path>
@@ -32,12 +36,12 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="144697359" Language="SFX" Hash="3797227878">
+		<SoundBank Id="144697359" Language="SFX" Hash="412018587">
 			<ObjectPath>\SoundBanks\Default Work Unit\Outdoor</ObjectPath>
 			<ShortName>Outdoor</ShortName>
 			<Path>Outdoor.bnk</Path>
 			<IncludedEvents>
-				<Event Id="603937113" Name="Play_Alarm" ObjectPath="\Events\Default Work Unit\Play_Alarm" DurationType="Infinite">
+				<Event Id="603937113" Name="Play_Alarm" ObjectPath="\Events\Default Work Unit\Play_Alarm" MaxAttenuation="25." DurationType="Infinite">
 					<ReferencedStreamedFiles>
 						<File Id="224245284" Language="SFX">
 							<ShortName>Alarm3.wav</ShortName>
@@ -48,31 +52,6 @@
 							<Path>SFX\Alarm1_70EA28A8.wem</Path>
 						</File>
 					</ReferencedStreamedFiles>
-				</Event>
-				<Event Id="3503206024" Name="Play_BallHit" ObjectPath="\Events\Default Work Unit\Play_BallHit" DurationType="OneShot" DurationMin="0.170809" DurationMax="0.369736">
-					<IncludedMemoryFiles>
-						<File Id="992769287" Language="SFX">
-							<ShortName>650976__nathanaelbray__bouncy-ball-bouncing-on-dry-grass.wav</ShortName>
-							<Path>SFX\650976__nathanaelbray__bouncy-ball-bouncing-on-dry-grass_4066D18B.wem</Path>
-						</File>
-						<File Id="1046046069" Language="SFX">
-							<ShortName>324734__150112__whiteballhittingsolid.wav</ShortName>
-							<Path>SFX\324734__150112__whiteballhittingsolid_E976F236.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{601E144A-5C71-4780-92B3-A2C770788D51}</DefaultSwitchValue>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{601E144A-5C71-4780-92B3-A2C770788D51}">
-							<Media>
-								<File Id="1046046069"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{9ABAB1CB-7C94-4C32-A8B2-39EC39E8C35F}">
-							<Media>
-								<File Id="992769287"/>
-							</Media>
-						</SwitchContainer>
-					</SwitchContainers>
 				</Event>
 				<Event Id="2998367848" Name="Play_BallRoll" ObjectPath="\Events\Default Work Unit\Play_BallRoll" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -99,11 +78,35 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="1577305892" Name="Play_Bark" ObjectPath="\Events\Default Work Unit\Play_Bark" MaxAttenuation="50." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="292887324" Language="SFX">
+							<ShortName>418154__14fpanskazummer_jakub__barking-s-dog.wav</ShortName>
+							<Path>SFX\418154__14fpanskazummer_jakub__barking-s-dog_EF1FBEB1.wem</Path>
+						</File>
+						<File Id="320989650" Language="SFX">
+							<ShortName>439535__cmdrobot__angry-dog.wav</ShortName>
+							<Path>SFX\439535__cmdrobot__angry-dog_CE4A31D7.wem</Path>
+						</File>
+						<File Id="544209354" Language="SFX">
+							<ShortName>BarkMiddle.wav</ShortName>
+							<Path>SFX\BarkMiddle_A18695B2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3347625526" Name="Play_BirdsChirping" ObjectPath="\Events\Default Work Unit\Play_BirdsChirping" DurationType="Infinite">
 					<ReferencedStreamedFiles>
 						<File Id="504058029" Language="SFX">
 							<ShortName>BirdsChirping.wav</ShortName>
 							<Path>SFX\BirdsChirping_94611DC0.wem</Path>
+						</File>
+					</ReferencedStreamedFiles>
+				</Event>
+				<Event Id="2690797144" Name="Play_Car" ObjectPath="\Events\Default Work Unit\Play_Car" MaxAttenuation="55." DurationType="Infinite">
+					<ReferencedStreamedFiles>
+						<File Id="655955015" Language="SFX">
+							<ShortName>185743__enric592__car-motor.wav</ShortName>
+							<Path>SFX\185743__enric592__car-motor_3573D42F.wem</Path>
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
@@ -171,21 +174,46 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Default Work Unit\Play_Footsteps" DurationType="OneShot" DurationMin="0.210071" DurationMax="0.297649">
+					<IncludedMemoryFiles>
+						<File Id="323897850" Language="SFX">
+							<ShortName>FootstepsConcrete.wav</ShortName>
+							<Path>SFX\FootstepsConcrete_2287CA02.wem</Path>
+						</File>
+						<File Id="441915156" Language="SFX">
+							<ShortName>FootstepsGrass.wav</ShortName>
+							<Path>SFX\FootstepsGrass_3F194F68.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{601E144A-5C71-4780-92B3-A2C770788D51}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{601E144A-5C71-4780-92B3-A2C770788D51}">
+							<Media>
+								<File Id="323897850"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{9ABAB1CB-7C94-4C32-A8B2-39EC39E8C35F}">
+							<Media>
+								<File Id="441915156"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="2905789278" Name="Play_GenWind" ObjectPath="\Events\Default Work Unit\Play_GenWind" DurationType="Infinite"/>
 				<Event Id="3689126666" Name="Play_Jump" ObjectPath="\Events\Default Work Unit\Play_Jump" DurationType="OneShot" DurationMin="0.125" DurationMax="0.125"/>
 				<Event Id="2498806176" Name="Play_Loose" ObjectPath="\Events\Default Work Unit\Play_Loose" DurationType="OneShot" DurationMin="0.928556" DurationMax="0.928556">
 					<IncludedMemoryFiles>
 						<File Id="532064581" Language="SFX">
 							<ShortName>433707__dersuperanton__you-win-you-loose-deep-voice.wav</ShortName>
-							<Path>SFX\433707__dersuperanton__you-win-you-loose-deep-voice_684C17C4.wem</Path>
+							<Path>SFX\433707__dersuperanton__you-win-you-loose-deep-voice_5AE51FED.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2955987680" Name="Play_Win" ObjectPath="\Events\Default Work Unit\Play_Win" DurationType="OneShot" DurationMin="0.793494" DurationMax="0.793494">
+				<Event Id="2955987680" Name="Play_Win" ObjectPath="\Events\Default Work Unit\Play_Win" DurationType="OneShot" DurationMin="4.024671" DurationMax="4.024671">
 					<IncludedMemoryFiles>
-						<File Id="815430084" Language="SFX">
-							<ShortName>433707__dersuperanton__you-win-you-loose-deep-voice.wav</ShortName>
-							<Path>SFX\433707__dersuperanton__you-win-you-loose-deep-voice_9A033A1C.wem</Path>
+						<File Id="635271514" Language="SFX">
+							<ShortName>185743__enric592__car-motor.wav</ShortName>
+							<Path>SFX\185743__enric592__car-motor_1422FD1E.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -193,6 +221,8 @@
 			<GameParameters>
 				<GameParameter Id="1006419845" Name="AlarmDistance" ObjectPath="\Game Parameters\Default Work Unit\AlarmDistance"/>
 				<GameParameter Id="1493153371" Name="PlayerSpeed" ObjectPath="\Game Parameters\Default Work Unit\PlayerSpeed"/>
+				<GameParameter Id="3557101530" Name="BarkDistance" ObjectPath="\Game Parameters\Default Work Unit\BarkDistance"/>
+				<GameParameter Id="3943412870" Name="CarSpeed" ObjectPath="\Game Parameters\Default Work Unit\CarSpeed"/>
 			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="3865314626" Name="Material" ObjectPath="\Switches\Default Work Unit\Material" GUID="{7D9C78F4-D87A-4CA2-A3C2-F78CE0135ECC}">
@@ -203,7 +233,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="340398852" Language="SFX" Hash="1015251758">
+		<SoundBank Id="340398852" Language="SFX" Hash="3059572056">
 			<ObjectPath>\SoundBanks\Default Work Unit\Indoor</ObjectPath>
 			<ShortName>Indoor</ShortName>
 			<Path>Indoor.bnk</Path>
@@ -216,6 +246,31 @@
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
+				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Default Work Unit\Play_Footsteps" DurationType="OneShot" DurationMin="0.210071" DurationMax="0.297649">
+					<IncludedMemoryFiles>
+						<File Id="323897850" Language="SFX">
+							<ShortName>FootstepsConcrete.wav</ShortName>
+							<Path>SFX\FootstepsConcrete_2287CA02.wem</Path>
+						</File>
+						<File Id="441915156" Language="SFX">
+							<ShortName>FootstepsGrass.wav</ShortName>
+							<Path>SFX\FootstepsGrass_3F194F68.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{601E144A-5C71-4780-92B3-A2C770788D51}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{601E144A-5C71-4780-92B3-A2C770788D51}">
+							<Media>
+								<File Id="323897850"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{9ABAB1CB-7C94-4C32-A8B2-39EC39E8C35F}">
+							<Media>
+								<File Id="441915156"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="2923734310" Name="Play_JazzMusic" ObjectPath="\Events\Default Work Unit\Play_JazzMusic" DurationType="Infinite">
 					<ReferencedStreamedFiles>
 						<File Id="992121572" Language="SFX">
@@ -226,12 +281,21 @@
 				</Event>
 				<Event Id="3689126666" Name="Play_Jump" ObjectPath="\Events\Default Work Unit\Play_Jump" DurationType="OneShot" DurationMin="0.125" DurationMax="0.125"/>
 			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="3865314626" Name="Material" ObjectPath="\Switches\Default Work Unit\Material" GUID="{7D9C78F4-D87A-4CA2-A3C2-F78CE0135ECC}">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete" ObjectPath="\Switches\Default Work Unit\Material\Concrete" GUID="{601E144A-5C71-4780-92B3-A2C770788D51}"/>
+						<Switch Id="4248645337" Name="Grass" ObjectPath="\Switches\Default Work Unit\Material\Grass" GUID="{9ABAB1CB-7C94-4C32-A8B2-39EC39E8C35F}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3084784476">
+		<SoundBank Id="1355168291" Language="SFX" Hash="320295727">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<IncludedAuxBusses>
+				<AuxBus Id="121027811" Name="ReverbHouse" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\ReverbHouse"/>
 				<AuxBus Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb"/>
 			</IncludedAuxBusses>
 		</SoundBank>
