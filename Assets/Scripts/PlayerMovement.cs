@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private float jumpingMaxHeight = 3f;
     [SerializeField] private float fallFactor = 0.9f;
-    [SerializeField] private GameObject barkingHouse;
+    [SerializeField] private GameObject barkingHouse = null;
 
     private bool isOnGround = false;
     private bool isJumping = false;
@@ -73,9 +73,13 @@ public class PlayerMovement : MonoBehaviour
         {
             float movementStrength = Vector3.Magnitude(_movementInput3D);
             transform.Translate(new Vector3(0, 0, -1) * (_velocity * movementStrength));
-            float distanceBetweenPlayerAndBarkingHouse = Vector3.Distance(gameObject.transform.position,
-                barkingHouse.gameObject.transform.position);
-            AkSoundEngine.SetRTPCValue("BarkDistance", 50 - distanceBetweenPlayerAndBarkingHouse);
+            if (barkingHouse != null)
+            {
+                float distanceBetweenPlayerAndBarkingHouse = Vector3.Distance(gameObject.transform.position,
+                    barkingHouse.gameObject.transform.position);
+                AkSoundEngine.SetRTPCValue("BarkDistance", 50 - distanceBetweenPlayerAndBarkingHouse);
+            }
+
             animator.SetBool("isWalking", true);
         }
         else
